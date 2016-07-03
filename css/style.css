@@ -47,7 +47,11 @@ body {
 	margin: 0;
 }
 .img_header{
+	border-top: 2px solid #128aa7;
 	border-bottom: 2px solid #138aa7;
+}
+.foto_header{
+	margin-bottom: -4px;
 }
 .contact{
 	font-weight: bolder;
@@ -65,9 +69,15 @@ body {
     float: right;
     text-align: center;
     }
+    .mnu_border{
+	border-top: 1px solid #128aa7;
+}
 .menu{
 	border-top: 1px solid #cacbcb;
 	border-bottom: 1px solid black;
+ 	box-shadow: 0 1px 5px 0 #606060;
+    z-index: 1;
+    position: relative;
 }
 .menu ul {
     font-size: 18px;
@@ -108,6 +118,7 @@ ul.submenu {
     top: 38px;
     left: 23px;
     background-color: white;
+    box-shadow: 0 5px 5px 0 #606060;
     }
 ul.submenu > li {
     display: block;
@@ -124,15 +135,17 @@ ul.menu > li:hover > ul.submenu {
     display: block;
 }
 .inf{
+	position: relative;
 	line-height: 25px;
 	color: #707771;
 	padding-right: 25px;
 	padding-left: 18px;
 	width: 210px;
-	height: 601px;
+	height: 604px;
 	background: #edeef0;
 	border-right: 1px solid #c7cacf;
 	float: left;
+	z-index: 0;
 }
 .news{
 
@@ -141,7 +154,7 @@ ul.menu > li:hover > ul.submenu {
 	padding-right: 25px;
 	padding-left: 18px;
 	width: 210px;
-	height: 601px;
+	height: 604px;
 	background: #edeef0;
 	border-left: 1px solid #c7cacf;
 	float: right;
